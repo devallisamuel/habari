@@ -37,17 +37,17 @@ export const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
         
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center relative">
               <span className="text-sm">🌙</span>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                1
+              </div>
             </div>
-            <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center relative">
               <span className="text-sm">🔔</span>
-            </div>
-            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold relative">
-              1
-            </div>
-            <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold relative">
-              1
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                1
+              </div>
             </div>
             <div className="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">
               <span className="text-sm">👤</span>
@@ -74,6 +74,8 @@ export const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
     </div>
   );
 };
+
+
 
 
 
