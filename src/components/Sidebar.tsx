@@ -57,7 +57,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center text-white font-bold text-sm mr-2">
               B
             </div>
-            <span className="font-bold text-lg">Brutalism</span>
+            <span className="font-bold text-lg">rutalism</span>
           </div>
         </div>
 
